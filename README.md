@@ -1,66 +1,60 @@
-# Gabriella de Caldas Santos
+# Linguagens de Marcação - Exercícios Práticos de XML
 
-📍 Sumaré - SP  
-📧 gabrieladecaldas@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/gabriella-c-7a26693b0/) | 💻 [GitHub](https://github.com/gabrieladecaldas-svg)
+Este repositório contém a resolução dos exercícios práticos de **Sintaxe e Validação XML**, referentes à Unidade Curricular de **Linguagens de Marcação**.
 
----
-
-## 🎯 Objetivo Profissional
-Buscando oportunidade para aplicar e expandir meus conhecimentos na área de Desenvolvimento de Software, contribuindo para a criação de soluções eficientes e evoluindo continuamente como desenvolvedora.
+## 📌 Objetivos da Atividade
+* Compreender os fundamentos e regras sintáticas da linguagem XML.
+* Identificar e corrigir erros de sintaxe em documentos XML (tags não fechadas, atributos sem aspas, caracteres especiais não escapados, nomes de elementos inválidos e erros de aninhamento).
+* Garantir que todos os documentos estejam **bem-formados** (*Well-Formed XML*) de acordo com as especificações do W3C.
 
 ---
 
-## 🎓 Formação Acadêmica
-* **Técnico em Desenvolvimento de Sistemas** — SENAI *(Cursando)*
-* **Ensino Médio** — SESI *(Previsão de conclusão: 2027)*
+## 🛠️ Resumo das Correções Efetuadas
+
+### 🔹 Exercício 1: Cadastro de Livro (`exercicio1.xml`)
+* **Erro Identificado:** A tag `<titulo>` foi aberta, mas não foi fechada antes do elemento seguinte.
+* **Correção:** Adicionado o fechamento explicito `</titulo>`.
+
+### 🔹 Exercício 2: Cadastro de Aluno (`exercicio2.xml`)
+* **Erros Identificados:** 
+  1. O atributo `matricula=202501` estava sem aspas.
+  2. A tag `<idade=20></idade>` tentou atribuir valor no nome da tag com `=`.
+* **Correção:** Adicionadas aspas ao atributo (`matricula="202501"`) e corrigida a estrutura do elemento para `<idade>20</idade>`.
+
+### 🔹 Exercício 3: Empresa (`exercicio3.xml`)
+* **Erros Identificados:** 
+  1. Declaração XML malformada (`version=1.0` sem aspas e sem fechamento `?>`).
+  2. Uso do caractere especial `&` no texto sem o devido escape.
+* **Correção:** Ajustada a instrução de processamento `<?xml version="1.0" encoding="UTF-8"?>` e substituído `&` por `&amp;`.
+
+### 🔹 Exercício 4: Pedido de Venda (`exercicio4.xml`)
+* **Erro Identificado:** Quebra da regra de aninhamento LIFO (Last In, First Out). A tag `<itens>` foi aberta dentro de `<cliente>`, mas `</cliente>` foi fechada antes de `</itens>`.
+* **Correção:** Separadas as estruturas de `<cliente>` e `<itens>` como elementos irmãos dentro do elemento raiz `<pedido>`.
+
+### 🔹 Exercício 5: Cadastro de Produtos (`exercicio5.xml`)
+* **Erros Identificados:** 
+  1. A tag `<nome produto>` continha espaço em branco no nome do elemento.
+  2. A tag `<1preco>` começava com um dígito numérico, o que é proibido em XML.
+* **Correção:** Renomeadas as tags para `<nome>` e `<preco>`, e encapsuladas dentro do bloco `<produto>`.
+
+### 🔹 Exercício 6: Sistema Escolar - Desafio (`exercicio6.xml`)
+* **Erros Identificados:** 
+  1. Aspas misturadas na declaração (`version='1.0"`) e no atributo (`matricula='202501"`).
+  2. Atributo `curso=Informática` sem aspas.
+  3. Caractere `&` não escapado no nome ("Lucas & Ana").
+  4. Tag `<disciplina>Banco de Dados` sem fechamento.
+* **Correção:** Padronização de todas as aspas duplas, substituição do `&` por `&amp;` e inserção da tag de fechamento `</disciplina>`.
 
 ---
 
-## 🛠️ Conhecimentos Técnicos
-* **Linguagens de Marcação e Estilização:** HTML5, CSS3, Markdown
-* **Linguagens de Programação e Lógica:** Lógica de Programação, JavaScript
-* **Ferramentas & Versionamento:** Git, GitHub, VS Code
+## 📁 Estrutura do Repositório
 
----
-
-## 🚀 Projetos Desenvolvidos
-
-### Currículo Profissional em Markdown
-* **Descrição:** Projeto desenvolvido para a unidade curricular de Linguagens de Marcação, focado em estruturação de informações e publicação de perfil profissional no GitHub.
-* **Tecnologias utilizadas:** Markdown, Git, GitHub
-* **Link do Projeto:** [Repositório Linguagens de Marcação](https://github.com/gabrieladecaldas-svg/linguagens-de-marca-o.git)
-
----
-
-## 📚 Cursos Complementares
-* **Desenvolvimento de Sistemas** — SENAI *(Em andamento)*
-* **Linguagens de Marcação** — SENAI
-* **FluêncIA - Fundamentos da Inteligência Artificial**
-* **Ética na Inteligência Artificial**
-* **Por dentro da Segurança Cibernética**
-* **Fundamentos e Ações da Economia Circular**
-* **Ciclos de Retorno para a Economia Circular**
-* **Acelerando a Transição para a Economia Circular**
-* **Desvendando a Descarbonização**
-* **Segurança do Trabalho**
-* **Excel Básico**
-
----
-
-## 🤝 Competências (Soft Skills)
-* Proatividade e vontade de aprender
-* Trabalho em equipe e comunicação
-* Organização e atenção aos detalhes
-* Lógica e resolução de problemas
-
----
-
-## 🌐 Idiomas
-* **Português:** Nativo
-* **Inglês:** Básico
-
----
-
-## 💼 Experiência Profissional
-> *Em busca da primeira experiência formal na área de TI. Focada no desenvolvimento acadêmico pelo SENAI e na criação de projetos práticos disponibilizados no GitHub.*
+```text
+.
+├── exercicio1.xml   # Cadastro de Livro
+├── exercicio2.xml   # Cadastro de Aluno
+├── exercicio3.xml   # Cadastro de Empresa
+├── exercicio4.xml   # Pedido de Venda
+├── exercicio5.xml   # Cadastro de Produtos
+├── exercicio6.xml   # Sistema Escolar (Desafio)
+└── README.md        # Documentação da atividade

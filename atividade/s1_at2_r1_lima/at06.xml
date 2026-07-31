@@ -1,0 +1,9 @@
+<escola>
+   <aluno matricula= "202501" curso= "informatica" >
+     <nome> lucas &amp; Ana</nome>
+        <disciplinas>
+          <disciplina> Banco de Dados </disciplina>
+          <disciplina>Logica de Programação</disciplina>
+          </disciplinas>
+          </aluno>
+          </escola>

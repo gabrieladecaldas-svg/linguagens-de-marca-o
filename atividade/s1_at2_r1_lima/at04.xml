@@ -1,0 +1,10 @@
+<pedido>
+<cliente>
+  <nome>Maria</nome>
+  </cliente>
+
+  <itens>
+  <item>Notebook</item>
+    <item>mouse</item>
+    </itens>
+    </pedido>
