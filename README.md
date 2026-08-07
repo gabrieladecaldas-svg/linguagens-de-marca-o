@@ -15,6 +15,7 @@ Este repositório contém a resolução dos exercícios práticos de **Sintaxe e
 * **Erro Identificado:** A tag `<titulo>` foi aberta, mas não foi fechada antes do elemento seguinte.
 * **Correção:** Adicionado o fechamento explicito `</titulo>`.
 
+
 ### 🔹 Exercício 2: Cadastro de Aluno (`exercicio2.xml`)
 * **Erros Identificados:** 
   1. O atributo `matricula=202501` estava sem aspas.
