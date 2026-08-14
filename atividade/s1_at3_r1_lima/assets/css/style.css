@@ -1,0 +1,10 @@
+body {
+    font-family:cursive;
+    background-color: rgb(250, 135, 221);
+}
+
+.titulo_hl{
+    color:black;
+    font-size: 36px;
+    text-align: left;
+}
