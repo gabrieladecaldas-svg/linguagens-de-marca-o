@@ -1,69 +1,115 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Configurações da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Loja de acessórios e produtos gamers.">
-
+    <meta name="description" content="Página da loja PixelGear eSports Store com produtos e periféricos.">
     <title>PixelGear eSports Store</title>
 
-    <!-- Arquivo de estilos -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Fonte do Google -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
 
+    <!-- CSS Separado -->
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <!-- Apresentação da loja -->
+
+    <!-- Cabeçalho do site -->
     <header>
         <h1>PixelGear eSports Store</h1>
-        <h2>Tecnologia para suas partidas!</h2>
-
-        <p>
-            Encontre acessórios para montar seu espaço gamer.<br>
-            Confira nossos produtos e ofertas.
-        </p>
+        <p>Os melhores computadores e periféricos para jogos.</p>
     </header>
 
-    <hr>
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#produto">PC Gamer</a></li>
+            <li><a href="#perifericos">Periféricos</a></li>
+            <li><a href="#montagem">Montagem</a></li>
+        </ul>
+    </nav>
 
+    <!-- Conteúdo principal -->
     <main>
-        <!-- Produto em destaque -->
-        <section>
-            <h2>Destaque da Semana: Teclado Gamer</h2>
 
-            <p>Teclado com iluminação <em>RGB</em> e teclas resistentes.</p>
-
-            <h3>Especificações</h3>
-            <p>Conexão USB e iluminação colorida.</p>
-
-            <h3>Preço Promocional</h3>
-            <p>De <del>R$ 249,90</del> por <strong>R$ 199,90!</strong></p>
-
-            <p><em>Mais praticidade para suas partidas.</em></p>
-        </section>
-
-        <hr>
-
-        <!-- Informações sobre a loja -->
-        <section>
+        <!-- Seção Sobre a Empresa -->
+        <section id="sobre">
             <h2>Sobre a PixelGear</h2>
+            <p>
+                Somos uma loja focada em montar computadores de alto desempenho para jogos.<br>
+                Nosso objetivo é entregar a melhor experiência para os jogadores.
+            </p>
 
-            <p><strong>Missão:</strong> oferecer produtos gamers de qualidade.</p>
-            <p><strong>Visão:</strong> crescer no mercado de tecnologia.</p>
-            <p><strong>Valores:</strong> respeito, confiança e inovação.</p>
+            <article>
+                <h3>Missão, Visão e Valores</h3>
+                <p><strong>Missão:</strong> Entregar computadores rápidos e confiáveis.</p>
+                <p><strong>Visão:</strong> Ser uma das principais lojas de informática gamer do país.</p>
+                <p><strong>Valores:</strong> Qualidade no atendimento, transparência e paixão por tecnologia.</p>
+            </article>
         </section>
+
+        <!-- Seção do Produto com Imagem em Destaque -->
+        <section id="produto">
+            <h2>PC Gamer PixelGear Ultimate</h2>
+
+            <!-- Imagem em destaque do PC Gamer -->
+            <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=800" 
+                 alt="Gabinete do PC Gamer com luzes RGB acesas" 
+                 width="500">
+
+            <h3>Ficha Técnica</h3>
+            <p>
+                Processador de alta frequência, 32GB RAM DDR5 e placa de vídeo de última geração.<br>
+                Desenvolvido para rodar qualquer jogo no ultra com altíssima taxa de quadros.
+            </p>
+
+            <!-- Links de interação / Botões CTA -->
+            <p>
+                <a href="https://wa.me/5500000000000" target="_blank">Comprar via WhatsApp</a> | 
+                <a href="#montagem">Ver Guia de Suporte</a>
+            </p>
+        </section>
+
+        <!-- Seção de Periféricos com Imagem e Lista ul -->
+        <section id="perifericos">
+            <h2>Periféricos Inclusos no Kit</h2>
+            <p>Ao adquirir o PC Gamer Ultimate, você recebe os seguintes itens:</p>
+
+            <!-- Imagem demonstrativa do kit de periféricos -->
+            <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=800" 
+                 alt="Teclado e mouse gamer iluminados em cima da mesa" 
+                 width="450">
+
+            <ul>
+                <li>Teclado Mecânico RGB com switches de alta precisão</li>
+                <li>Mouse Gamer de 16.000 DPI com sensor óptico</li>
+                <li>Headset Surround 7.1 com microfone antirruído</li>
+                <li>Mousepad Extra Large com bordas costuradas</li>
+            </ul>
+        </section>
+
+        <!-- Seção de Montagem com Lista ol -->
+        <section id="montagem">
+            <h2>Passo a Passo da Montagem e Instalação</h2>
+            <p>Confira como preparamos e como você deve finalizar a instalação da sua máquina:</p>
+            <ol>
+                <li>Desembale a máquina com cuidado em uma superfície plana e limpa.</li>
+                <li>Remova as proteções internas de espuma do gabinete.</li>
+                <li>Conecte os periféricos nas portas USB apropriadas.</li>
+                <li>Ligue o cabo HDMI ou DisplayPort diretamente na placa de vídeo dedicada.</li>
+                <li>Conecte o cabo de força, ligue a fonte e pressione o botão Power.</li>
+            </ol>
+        </section>
+
     </main>
 
-    <!-- Rodapé da página -->
+    <!-- Rodapé -->
     <footer>
-        <p>PixelGear eSports Store - 2026</p>
+        <p>&copy; 2026 - PixelGear eSports Store</p>
     </footer>
+
 </body>
 </html>
