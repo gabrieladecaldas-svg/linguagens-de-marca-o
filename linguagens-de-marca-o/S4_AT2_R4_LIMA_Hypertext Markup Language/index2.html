@@ -1,0 +1,50 @@
+
+<!-- Configuração de Hardware -->
+<section id="configuracao">
+    <h2>Configure seu PC Gamer</h2>
+
+    <fieldset>
+        <legend>Escolha suas preferências</legend>
+
+        <p>
+            <label for="gpu">Objetivo do computador:</label>
+            <select id="gpu" name="gpu" required>
+                <option value="">Selecione uma opção</option>
+                <option value="jogos">Jogos online</option>
+                <option value="edicao">Edição de vídeo</option>
+                <option value="design">Design gráfico</option>
+                <option value="trabalho">Trabalho remoto</option>
+            </select>
+        </p>
+
+        <p>
+            <strong>Necessidade de desempenho:</strong><br>
+            <input type="radio" id="alta" name="desempenho" value="alta" required>
+            <label for="alta">Alta</label>
+
+            <input type="radio" id="media" name="desempenho" value="media">
+            <label for="media">Média</label>
+
+            <input type="radio" id="baixa" name="desempenho" value="baixa">
+            <label for="baixa">Baixa</label>
+        </p>
+
+        <p>
+            <strong>Serviços adicionais:</strong><br>
+            <input type="checkbox" id="montagem" name="servicos" value="montagem">
+            <label for="montagem">Montagem profissional</label><br>
+
+            <input type="checkbox" id="garantia" name="servicos" value="garantia">
+            <label for="garantia">Garantia estendida</label><br>
+
+            <input type="checkbox" id="suporte" name="servicos" value="suporte">
+            <label for="suporte">Suporte técnico</label>
+        </p>
+
+        <p>
+            <label for="orcamento">Orçamento disponível (R$):</label>
+            <input type="number" id="orcamento" name="orcamento"
+                   min="1000" max="20000" step="100" required>
+        </p>
+    </fieldset>
+</section>

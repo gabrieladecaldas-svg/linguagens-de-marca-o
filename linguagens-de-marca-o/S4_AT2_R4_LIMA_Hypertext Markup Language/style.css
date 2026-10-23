@@ -1,0 +1,43 @@
+
+/* Fundo e texto da página */
+body {
+    background-color: #11060b;
+    color: rgb(255, 249, 249);
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 13px;
+}
+
+/* Tamanhos dos títulos */
+h1 {
+    font-size: 23px;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+/* Linhas de separação */
+hr {
+    border: 0;
+    border-top: 1px solid rgb(255, 244, 244);
+}
+
+/* Tabela de produtos */
+#tabela table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#tabela th, #tabela td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabela th {
+    background-color: #222;
+}

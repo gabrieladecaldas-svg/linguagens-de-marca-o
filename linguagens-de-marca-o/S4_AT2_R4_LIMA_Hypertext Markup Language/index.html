@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PixelGear - Loja de PCs gamers, periféricos e setups eSports.">
+    <title>PixelGear eSports Store</title>
+
+    <!-- Fonte utilizada na página -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho e navegação -->
+    <header>
+        <h1>PixelGear eSports Store</h1>
+        <h2>Tecnologia para suas partidas!</h2>
+        <p>Encontre computadores gamers e acessórios para melhorar seu desempenho.</p>
+
+        <nav aria-label="Navegação principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#produto">Produto</a>
+            <a href="#perifericos">Periféricos</a>
+            <a href="#tabela">Preços</a>
+            <a href="#orcamento">Solicitar orçamento</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Apresentação da loja -->
+        <section id="sobre">
+            <h2>Sobre a PixelGear</h2>
+            <p>
+                A PixelGear oferece produtos para jogadores que buscam
+                qualidade, tecnologia e bom desempenho.
+            </p>
+
+            <h3>Nossa missão</h3>
+            <p>Oferecer equipamentos de qualidade para diferentes jogadores.</p>
+
+            <h3>Nossa visão</h3>
+            <p>Ser uma loja reconhecida no mercado gamer.</p>
+
+            <h3>Nossos valores</h3>
+            <p>Qualidade, confiança, inovação e bom atendimento.</p>
+        </section>
+
+        <!-- Produto em destaque -->
+        <section id="produto">
+            <h2>Destaque da semana: PC Gamer</h2>
+
+            <img
+                src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Computador gamer com gabinete e componentes de alto desempenho"
+                class="imagem-produto"
+            >
+
+            <h3>Setup Beast</h3>
+            <p>
+                Um computador pensado para jogos, transmissões e atividades
+                que exigem bom desempenho.
+            </p>
+
+            <p><strong>Processador:</strong> Intel Core i7 ou Ryzen 7</p>
+            <p><strong>Placa de vídeo:</strong> RTX 4060 Ti 8GB</p>
+            <p><strong>Memória RAM:</strong> 32GB DDR5</p>
+            <p><strong>Preço promocional:</strong> <del>R$ 6.999,00</del> <strong>R$ 6.499,00</strong></p>
+
+            <!-- Links para contato e suporte -->
+            <p>
+                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                    Comprar pelo WhatsApp
+                </a>
+                |
+                <a href="#orcamento">Solicitar orçamento</a>
+            </p>
+        </section>
+
+        <!-- Lista de periféricos -->
+        <section id="perifericos">
+            <h2>Periféricos inclusos</h2>
+            <ul>
+                <li><strong>Teclado gamer:</strong> teclas resistentes e iluminação.</li>
+                <li><strong>Mouse gamer:</strong> precisão para jogos.</li>
+                <li><strong>Headset:</strong> áudio para comunicação e partidas.</li>
+                <li><strong>Monitor:</strong> tela para visualizar os jogos.</li>
+            </ul>
+        </section>
+
+        <!-- Tabela para comparar os computadores -->
+        <section id="tabela">
+            <h2>Compare nossos setups</h2>
+            <p>Confira as especificações e os preços para escolher o modelo ideal.</p>
+
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Modelo</th>
+                            <th scope="col">Processador</th>
+                            <th scope="col">Placa de vídeo</th>
+                            <th scope="col">Memória RAM</th>
+                            <th scope="col">Preço no PIX</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Setup Entry</th>
+                            <td>Intel i5 / Ryzen 5</td>
+                            <td>GTX 1650 4GB</td>
+                            <td>16GB DDR4</td>
+                            <td>R$ 3.499,00</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Setup Beast</th>
+                            <td>Intel i7 / Ryzen 7</td>
+                            <td>RTX 4060 Ti 8GB</td>
+                            <td>32GB DDR5</td>
+                            <td><strong>R$ 6.499,00</strong></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Setup Ultra 4K</th>
+                            <td>Intel i9 / Ryzen 9</td>
+                            <td>RTX 4090 24GB</td>
+                            <td>64GB DDR5</td>
+                            <td>R$ 14.999,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Formulário de orçamento -->
+        <section id="orcamento">
+            <h2>Monte seu PC Gamer</h2>
+            <p>Preencha os dados para solicitar um orçamento personalizado.</p>
+
+            <form action="#" method="get">
+                <!-- Dados do cliente -->
+                <fieldset>
+                    <legend>1. Dados do cliente</legend>
+
+                    <p>
+                        <label for="nome">Nome completo: *</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail: *</label><br>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </p>
+
+                    <p>
+                        <label for="whatsapp">WhatsApp: *</label><br>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required>
+                    </p>
+                </fieldset>
+
+                <!-- Preferências de hardware -->
+                <fieldset>
+                    <legend>2. Preferências do hardware</legend>
+
+                    <p>
+                        <label for="gpu">Escolha a placa de vídeo principal: *</label><br>
+                        <select id="gpu" name="gpu" required>
+                            <option value="">-- Selecione uma GPU --</option>
+                            <option value="gtx1650">NVIDIA GTX 1650 4GB</option>
+                            <option value="rtx4060ti">NVIDIA RTX 4060 Ti 8GB</option>
+                            <option value="rtx4090">NVIDIA RTX 4090 24GB</option>
+                        </select>
+                    </p>
+
+                    <p><strong>Objetivo principal da máquina: *</strong></p>
+
+                    <input type="radio" id="jogos" name="objetivo" value="jogos" checked>
+                    <label for="jogos">Jogos eletrônicos / eSports</label><br>
+
+                    <input type="radio" id="streaming" name="objetivo" value="streaming">
+                    <label for="streaming">Transmissões e criação de conteúdo</label><br>
+
+                    <input type="radio" id="trabalho" name="objetivo" value="trabalho">
+                    <label for="trabalho">Edição de vídeo e arquitetura</label>
+
+                    <p><strong>Serviços e adicionais desejados:</strong></p>
+
+                    <input type="checkbox" id="rgb" name="adicionais" value="rgb">
+                    <label for="rgb">Fitas de LED RGB adicionais</label><br>
+
+                    <input type="checkbox" id="overclock" name="adicionais" value="overclock">
+                    <label for="overclock">Configuração de desempenho</label><br>
+
+                    <input type="checkbox" id="garantia-estendida" name="adicionais" value="garantia-estendida">
+                    <label for="garantia-estendida">Garantia estendida de 3 anos</label>
+
+                    <p>
+                        <label for="observacoes">Observações ou dúvidas:</label><br>
+                        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Escreva suas preferências..."></textarea>
+                    </p>
+
+                    <p>
+                        <label for="foto-referencia">Foto do setup de referência:</label><br>
+                        <input type="file" id="foto-referencia" name="foto-referencia" accept="image/*">
+                    </p>
+                </fieldset>
+
+                <!-- Botões do formulário -->
+                <p>
+                    <button type="submit">Enviar solicitação de orçamento</button>
+                    <button type="reset">Limpar campos</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <hr>
+        <p><i>“Desempenho não é um luxo, é uma necessidade.”</i></p>
+        <p><small>PixelGear Team 2026</small></p>
+    </footer>
+</body>
+</html>
